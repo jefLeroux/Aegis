@@ -1,0 +1,173 @@
+/* General layout and typography */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1c2c;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    margin-right: 5rem;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #00ffff;
+}
+
+/* Top navigation bar */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #0d0e1a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.top-nav .logo {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #00ffff;
+}
+
+.top-nav nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.top-nav nav ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    padding: 0.75rem 0;
+}
+
+/* Left Sidebar for Red/Blue Team Tools */
+.tools-sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px; /* Below the top nav */
+    width: 220px;
+    height: calc(100vh - 60px);
+    background-color: #15161e;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 50;
+}
+
+.tools-sidebar h3 {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.tools-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tools-sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    background-color: #252540;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.tools-sidebar ul li:hover {
+    background-color: #00ffff;
+    color: #15161e;
+}
+
+.tools-sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-title {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items li {
+    display: inline;
+}
+
+.nav-items a {
+    color: #4da8da;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+/* Main layout */
+.main-layout {
+    margin-left: 240px; /* Space for sidebar */
+    padding: 20px;
+    margin-top: 60px; /* Space for top nav */
+    padding-bottom: 0px;
+    min-height: calc(100vh - 90px);
+}
+
+/* Main content area */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Blue Team tools boxes */
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tool-box {
+    background-color: #2e3247;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tool-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tool-box p {
+    font-size: 14px;
+    color: #b3b3b3;
+}

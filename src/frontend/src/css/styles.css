@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101125;
+  color: #fff;
+}
+
+nav {
+  margin-right: 5rem;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #0d0e1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.top-nav .logo {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #00ffff;
+}
+
+.top-nav nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.top-nav nav ul li a {
+  color: #00ffff;
+  text-decoration: none;
+  padding: 0.75rem 0;
+}
+
+/* Left Sidebar for Red/Blue Team Tools */
+.tools-sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px; /* Below the top nav */
+  width: 220px;
+  height: calc(100vh - 60px);
+  background-color: #15161e;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+.tools-sidebar h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.tools-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tools-sidebar ul li {
+  padding: 15px;
+  text-align: center;
+  background-color: #252540;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.tools-sidebar ul li:hover {
+  background-color: #00ffff;
+  color: #15161e;
+}
+
+/* Main Dashboard Content */
+.main-content {
+  margin-left: 240px; /* Space for sidebar */
+  padding: 20px;
+  margin-top: 60px; /* Space for top nav */
+  padding-bottom: 0px;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  min-height: calc(100vh - 90px);
+}
+
+/* Dashboard Item Layout */
+.dashboard-item {
+  background-color: #1b1b2f;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  height: calc((100vh - 180px) / 2);
+}
+
+/* Use this class for items that span across both columns */
+.dashboard-item.full-width {
+  grid-column: span 2;
+}
+
+canvas {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+#findingsResolvedChart {
+  max-width: 100% !important;
+}
+
+/* .findings-summary .critical {
+  color: #ff4c4c;
+}
+
+.findings-summary .high {
+  color: #ffae42;
+}
+
+.findings-summary .medium {
+  color: #f0e130;
+}
+
+.findings-summary .low {
+  color: #00ffff;
+} */

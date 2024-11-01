@@ -8,9 +8,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && electron .",
-    "build": "webpack --config webpack.main.config.js && webpack --config webpack.renderer.config.js"
+    "start:api": "ts-node src/api/index.ts",
+    "start:electron": "cd src/frontend && electron .",
+    "build:electron": "cd src/frontend && tsc",
+    "build:cpp": "cd src/backend && cmake . && make"
   },
   "keywords": [],
   "author": "",

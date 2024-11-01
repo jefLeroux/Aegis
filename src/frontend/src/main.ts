@@ -12,7 +12,7 @@ function createWindow() {
     },
     });
 
-  win.loadFile(path.join(__dirname, "../index.html")); // Load your HTML file
+  win.loadFile(path.join(__dirname, "../src/pages/index.html")); // Load your HTML file
 
     ipcMain.on("message-from-renderer", (event, arg) => {
         console.log(arg); // Print message from renderer
