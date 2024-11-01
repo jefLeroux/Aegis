@@ -1,0 +1,68 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Node modules
+node_modules/
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Output directory
+dist/
+build/
+
+# Electron
+electron-packager/
+electron-builder/
+
+# Compiled C++ files
+src/backend/build/
+src/backend/*.o
+src/backend/*.obj
+src/backend/CMakeFiles/
+src/backend/Makefile
+src/backend/*.cmake
+src/backend/cmake_install.cmake
+src/backend/AegisBackend
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Testing/
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+
+# Mac system files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+
+# Miscellaneous
+coverage/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.merge

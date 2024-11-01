@@ -1,0 +1,31 @@
+{
+  "name": "aegis",
+  "version": "1.0.0",
+  "description": "Aegis is a versatile cybersecurity toolset designed to provide both offensive and defensive capabilities for cybersecurity professionals. With a focus on speed and efficiency, Aegis combines a powerful C++ backend with an Electron frontend, enabling secure project-based workflows for in-depth analysis, red team operations, and blue team defenses.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && electron .",
+    "build": "webpack --config webpack.main.config.js && webpack --config webpack.renderer.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "electron": "^33.0.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^4.21.1",
+    "ts-node": "^10.9.2"
+  }
+}
